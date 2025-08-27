@@ -9,16 +9,30 @@ Para el proyecto debemos configurar un entorno maven para armar el proyecto, par
 ## Instalación
 1. Vamos a clonar el repositorio de git con el siguiente comando
 ```bash
-git clone https://github.com/Fataltester/Taller-1-AREP.git
+git clone https://github.com/Fataltester/Taller-2-AREP.git
 ```
 2. Como estamos utilizando Netbeans simplemente abrimos el proyecto en el ambiente y ejecutamos el archivo "WebApplication", una vez iniciado, en la consola aparecerá "Listo para recibir ..."
-<img width="1247" height="1035" alt="image" src="https://github.com/user-attachments/assets/a9f80cbf-e0f4-494d-abd3-30c1df290482" />
+
 3. Procedemos a ir al navegador e insertar la siguiente dirección
 ```bash
-http://localhost:35000/src/main/public/index.html
+http://localhost:35000/index.html
 ```
 Lo que nos llevará a nuestra aplicación web
-<img width="1214" height="946" alt="image" src="https://github.com/user-attachments/assets/0f90dda2-2bcf-4807-a8cb-4ab7ef649807" />
+<img width="1239" height="531" alt="image" src="https://github.com/user-attachments/assets/809f62ae-797c-4a56-9678-188af2d561cf" />
+Para consultar las consultas tenemos
+Servicios REST:
+```bash
+http://localhost:35000/pi
+http://localhost:35000/hello?name=juan
+```
+Para archivos estáticos:
+```bash
+http://localhost:35000/cat.jpg
+http://localhost:35000/index.html
+http://localhost:35000/response.js
+http://localhost:35000/style.css
+```
+
 ## Arquitectura
 Estamos ante una arquitectura cliente-servidor, a nivel del carpetado del proyecto tenemos la siguiente estructura
 <img width="492" height="370" alt="image" src="https://github.com/user-attachments/assets/16e613e0-56d0-46b2-8048-2917ea00e06d" />
