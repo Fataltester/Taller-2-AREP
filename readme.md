@@ -17,7 +17,7 @@ git clone https://github.com/Fataltester/Taller-2-AREP.git
 ```bash
 http://localhost:35000/....
 ```
-Ya dependiendo la solicitud si es de archivo estático o servicio Rest ya definido se completa la URL
+Ya dependiendo la solicitud si es de archivo estático o servicio Rest ya definido se completa la URI
 
 Para consultar tenemos:
 Servicios REST:
