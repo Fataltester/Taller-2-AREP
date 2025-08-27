@@ -12,11 +12,20 @@ import java.net.URI;
  */
 public class HttpRequest {
     URI reqUri = null;
-    HttpRequest(URI requestUri) {
-        reqUri = requestUri;
+    public HttpRequest(URI requestUri) {  
+        this.reqUri = requestUri;
     }
-    public String getValue(String paramName){
-        String paramValue = reqUri.getQuery().split("=")[1];
-        return paramValue;
+    public String getValue(String paramName) {
+    String query = reqUri.getQuery();
+    if (query == null) return null;
+
+    String[] params = query.split("&");
+    for (String p : params) {
+        String[] kv = p.split("=", 2); // 👈 importante: solo dividir en 2
+        if (kv[0].equals(paramName)) {
+            return kv.length > 1 ? kv[1] : null;
+        }
     }
+    return null;
+}
 }

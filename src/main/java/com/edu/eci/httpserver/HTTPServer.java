@@ -114,7 +114,7 @@ public class HTTPServer {
 
 
 
-    private static String guessMimeType(String filename) {
+    public static String guessMimeType(String filename) {
         if (filename.endsWith(".html")) return "text/html";
         if (filename.endsWith(".css")) return "text/css";
         if (filename.endsWith(".js")) return "application/javascript";
