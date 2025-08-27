@@ -37,9 +37,12 @@ http://localhost:35000/style.css
 Tenemos una arquitectura por capas, donde cada capa tiene las siguientes funciones
 
 Capa de red -> donde se inicializa el server socket.
+
 Capa de request/parsing handling -> donde manejamos HTTPRequest y HTTPResponse para control de peticiones.
-Capa de aplicación -> donde estan contenidos los REST (service)
-Capa de recursos estáticos -> donde servimos los archivos estáticos
+
+Capa de aplicación -> donde estan contenidos los REST (service).
+
+Capa de recursos estáticos -> donde servimos los archivos estáticos.
 
 ## Reporte de pruebas
 Tener en cuenta que el servidor debe estar ejecutandosé
